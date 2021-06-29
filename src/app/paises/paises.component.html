@@ -1,0 +1,7 @@
+<h2>Paises</h2>
+<ul class="paises">
+    <li *ngFor="let pais of paises">
+        <a routerLink="/detail/{{pais.id}}"></a>
+        <span class="badge">{{pais.id}}</span> {{pais.name}}
+    </li>
+</ul>

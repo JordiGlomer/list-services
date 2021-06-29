@@ -1,0 +1,11 @@
+<div *ngIf="pais">
+    <h2>{{pais.name | uppercase}} Detalles</h2>
+    <div><span>id: </span>{{pais.id}}</div>
+
+
+    <div>
+        <label for="pais-name">Nombre pais: </label>
+        <input id="pais-name" [(ngModel)]="pais.name" placeholder="Pais name">
+    </div>
+    <button (click)="goBack()">go back</button>
+</div>
