@@ -13,10 +13,10 @@ export class DashboardComponent implements OnInit {
   constructor(private paisService: PaisService) { }
 
   ngOnInit() {
-    this.getHeroes();
+    this.getPaises();
   }
 
-  getHeroes(): void {
+  getPaises(): void {
     this.paisService.getPaises()
       .subscribe(paises => this.paises = paises.slice(1, 5));
   }
